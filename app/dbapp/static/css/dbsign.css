@@ -1,0 +1,119 @@
+body{
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #283048 , #859398); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #283048 , #859398); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
+#data{
+    width:86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 15px;
+    color: orange;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #1a0600;
+}
+
+#relButton{
+  height: 30px;
+  width: 30px;
+}
+
+#desttd{
+    margin-left: 8%;
+    text-align: left;
+}
+
+#sign{
+    width: 60%;
+    margin-bottom: 25%;
+    margin-left: 20%;
+    background-color: #1a1a1a;
+    border: 10px solid #9a9a98;
+    margin-top: 1%;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0px #777777, 0 0px rgba(0, 0, 0, 0.4)
+    background-image: linear-gradient(right top, #111 59%, #333 93%);
+    background-image: -o-linear-gradient(right top, #111 59%, #333 90%);
+    background-image: -moz-linear-gradient(right top, #111 59%, #333 90%);
+    background-image: -webkit-linear-gradient(bottom left, #111 2%, #333 93%);
+    background-image: -ms-linear-gradient(right top, #111 59%, #333 90%);
+    background-image: gradient(right top, #111 59%, #333 90%);
+}
+
+#pole{
+    width: 50px;
+    margin-left: 10%;
+    float: left;
+    height: 100%;
+    background-color: black;
+}
+
+td{
+    height: 30px;
+    text-align:center;
+}
+
+tr{
+    background-color: #1a0600;
+}
+
+@font-face {
+    font-family: ledfont;
+    src: url(../bold_led_board-7.ttf);
+}
+
+table {
+    font-family: ledfont;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+
+.field {
+  display:flex;
+  position:realtive;
+  margin:3em auto;
+  width:40%;
+}
+
+.field>input[type=text],
+.field>input[type=submit] {
+  display:block;
+  font:20px Myriad Pro;
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:10px;
+  border:3px ;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.field>input[type=submit] {
+  padding:10px 12px;
+  background-color:#C04848;
+  color:white;
+  border:none;
+  border-radius: 0px 6px 6px 0px;
+}
+.field>input[type=submit]:hover {
+	cursor:pointer;
+}
+h1{
+
+	color:#FFF;
+	padding:10px;
+	text-align:center;
+	font-size:36px;
+  font-family: "Helvetica Neue";
+  text-shadow: 0px 0px 14px black;
+}

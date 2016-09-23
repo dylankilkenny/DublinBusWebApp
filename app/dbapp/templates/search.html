@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dublin Bus Stop RTI</title>
+    <link rel="stylesheet" href= "static/css/dbsign.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  </head>
+<body>
+  <form method="post" action="stopno" class="field" id="searchform" >
+  <input type="text" id="searchterm"  name="stopid" placeholder="Search for a bus stop">
+  <input type="submit" id="search" >
+  </form>
+
+  <h1 id="#stop"> Stop {{ stopid }} </h1>
+
+  <div id="mainContent">
+    <div id="sign">
+      <table  id="data">
+        <tr>
+          <thead>
+            <td>Route</td>
+            <td id="desttd">Destination</td>
+            <td>Time</td>
+          </thead>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+<script>
+  /*global $*/
+  $(document).ready(
+    function() {
+      setInterval(function() {
+          $.ajax({
+          url: "json_data/"{{ stopid }}"stop",
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: function(data) {
+            $('#data tbody').remove();
+            $.each(data.results, function(index, value) {
+              $("#data").append("<tr><td>"+value.route +"</td>"+"<td id='desttd'>"+value.destination+"</td>"+"<td>"+value.duetime+"</td></tr>");
+            });
+          },
+        });
+      },
+      3000);
+    });
+</script>
+  </body>
+</html>
