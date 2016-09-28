@@ -16,8 +16,6 @@ cd to folder you would like to install in
     $ source bin/activate
     $ pip install -r requirements.txt
 
-Windows
-
 #running
 To run
     
