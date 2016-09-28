@@ -9,7 +9,7 @@ import os
 def index():
     return render_template('index.html')
 
-@app.route('/stopno', methods=['POST'])
+@app.route('/search', methods=['POST'])
 def stopno():
     stopid = request.form['stopid']
     dblink = 'http://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=' + str(stopid)+ '&format=json'
