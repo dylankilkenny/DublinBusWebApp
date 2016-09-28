@@ -17,7 +17,7 @@ To run
     $ cd app
     $ python run.py
    
-navigate to http://localhost:5000/ in your browswer
+navigate to http://localhost:5000/ in your browswer and search for a stop
 
 ![alt tag](https://i.imgur.com/FTd59Eu.png)
 
