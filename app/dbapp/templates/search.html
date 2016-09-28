@@ -34,7 +34,7 @@
     function() {
       setInterval(function() {
           $.ajax({
-          url: "json_data/"{{ stopid }}"stop",
+          url: "static/json_data/stop{{ stopid }}.json",
           dataType: 'json',
           type: 'get',
           cache: false,
